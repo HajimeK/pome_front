@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperiencesApiService } from 'src/app/services/experiences-api.service';
-import { Tag } from 'src/app/services/model';
+import { ExperiencesApiService } from '../../services/experiences-api.service';
+import { Tag } from '../../services/model';
 
 @Component({
   selector: 'app-experiences-head',
@@ -14,6 +14,7 @@ export class ExperiencesHeadComponent implements OnInit {
 
   ngOnInit(): void {
     this.experienceAppService.getTags().subscribe(async (tags) => {
+      console.log(tags);
       this.tags = tags;
     });
   }
