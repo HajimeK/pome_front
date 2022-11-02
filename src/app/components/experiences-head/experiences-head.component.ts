@@ -13,9 +13,11 @@ export class ExperiencesHeadComponent implements OnInit {
   constructor(private experienceAppService: ExperiencesApiService) {}
 
   ngOnInit(): void {
+    console.log('loading tags...');
     this.experienceAppService.getTags().subscribe(async (tags) => {
       console.log(tags);
       this.tags = tags;
     });
+    console.log('DONE');
   }
 }

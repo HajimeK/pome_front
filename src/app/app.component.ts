@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
-import * as AOS from 'aos';
-
+const AOS = require('aos');
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

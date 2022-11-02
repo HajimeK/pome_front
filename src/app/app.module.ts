@@ -20,6 +20,7 @@ import { ExperiencesContainerComponent } from './components/experiences-containe
 import { ExperiencesContentComponent } from './components/experiences-content/experiences-content.component';
 import { ExperienceCardComponent } from './components/experience-card/experience-card.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MatInputModule,
     TextFieldModule,
     ReactiveFormsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

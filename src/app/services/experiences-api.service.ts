@@ -13,9 +13,11 @@ export class ExperiencesApiService {
   getTags(): Observable<Tag[]> {
     // API call
     return this.http.get<Tag[]>('http://pomeapi-env.eba-peksw24h.ap-northeast-1.elasticbeanstalk.com/api/tag/list');
+    //return this.http.get<Tag[]>('http://localhost:8081/api/tag/list');
   }
 
   getExperiences(tag: string): Observable<Experience[]> {
-    return this.http.get<Experience[]>(`http://pomeapi-env.eba-peksw24h.ap-northeast-1.elasticbeanstalk.com/api/experience/${tag}`)
+    return this.http.get<Experience[]>(`http://pomeapi-env.eba-peksw24h.ap-northeast-1.elasticbeanstalk.com/api/experience/list/?tag=${tag}`)
+    //return this.http.get<Experience[]>(`http://localhost:8081/api/experience/list/?tag=${tag}`)
   }
 }
