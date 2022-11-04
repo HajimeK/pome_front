@@ -34,8 +34,8 @@ jobs:
           name: Run build
           command: npm run build
       - aws-s3/copy:
-          arguments: '--dryrun'
-          from: dist
+          arguments: '--recursive'
+          from: dist/*
           to: 's3://pomefront'
 
 workflows:
