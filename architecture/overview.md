@@ -18,6 +18,7 @@
         - [contact](#contact-1)
       - [Services](#services)
         - [experiences-api](#experiences-api)
+  - [To run the app](#to-run-the-app)
 
 ## Page Design
 
@@ -99,3 +100,16 @@ The service to extract my skills card entry from the backend API server.
 Following is the table structure.
 ![](tabledesign.png)
 
+## To run the app
+
+Define the environment variables prperly to point to the middleware API, which runs with https://github.com/HajimeK/pome_api
+
+- API_HOST (local host in the case *npm run start() locally)
+- PORT (default 3000, but you can change by defining this environment variable)
+
+
+```
+npm install
+npm run build
+npm run start
+```
