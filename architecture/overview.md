@@ -11,24 +11,19 @@
       - [Comopnents](#comopnents)
         - [top](#top)
         - [profile](#profile)
-        - [experiences-head](#experiences-head)
         - [experiences-container](#experiences-container)
+        - [experiences-head](#experiences-head)
         - [experiences-content](#experiences-content)
         - [experience-card](#experience-card)
         - [contact](#contact-1)
       - [Services](#services)
         - [experiences-api](#experiences-api)
-  - [Middleware with express.js and Backend DB](#middleware-with-expressjs-and-backend-db)
-    - [Architecture](#architecture)
-      - [API](#api)
-        - [Database](#database)
-        - [Target](#target)
-          - [To AWS](#to-aws)
-          - [To Azure](#to-azure)
 
 ## Page Design
 
 ![Site Design](sitedesign.png)
+
+Contact page is under construction.
 
 ### Pages
 
@@ -45,7 +40,7 @@ By clicking each tiles, it jumps to the applications to explain my work.
 
 Skills tiled with material UI cards.
 Jumps to the site of the implementation using the skill.
-![Skill Card](skill_card.svg)
+![Skill Card](skill_card.png)
 
 | element     | description                                                  |
 | :---------- | :----------------------------------------------------------- |
@@ -76,74 +71,31 @@ ng generate service experiences-api
 
 ##### top
 
+Component to display the top hero page.
 ##### profile
 
-##### experiences-head
-
+Component to display my overall profile.
 ##### experiences-container
 
+Experince container to discplay the experiences.
+This includes head, content section.
+Cards are included in the content section
+##### experiences-head
+
+Compoment to provide the list of skills category at the header of the experiences section.
 ##### experiences-content
 
+holds the
 ##### experience-card
 
 ##### contact
 
+TBD
 #### Services
 
 ##### experiences-api
 
-## Middleware with express.js and Backend DB
-
-### Architecture
-
-#### API
-
-##### Database
-
+The service to extract my skills card entry from the backend API server.
+Following is the table structure.
 ![](tabledesign.png)
 
-##### Target
-
-###### To AWS
-
-http://pomefront.s3-website-ap-northeast-1.amazonaws.com/
-
-https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/WebsiteHosting.html
-
-Set up Elasti Beanstalk environment with the following command.
-
-```sh
-
-```
-
-https://docs.aws.amazon.com/ja_jp/elasticbeanstalk/latest/dg/using-features.managing.db.html
-
-Set up S3 bucket for Web Hosting with the following command.
-
-```sh
-
-```
-
-###### To Azure
-
-Set up PosgtreSQL environment with the following command.
-
-```sh
-
-```
-
-https://docs.microsoft.com/ja-jp/azure/developer/python/how-to-create-static-sites
-
-Set up Azure AppService environment with the following command.
-
-```sh
-
-```
-
-https://docs.microsoft.com/ja-jp/azure/postgresql/flexible-server/tutorial-webapp-server-vnet
-
-Set up Azure Storage for Web Hosting with the following command.
-
-```sh
-
-```
