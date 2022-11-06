@@ -20,6 +20,8 @@
         - [experiences-api](#experiences-api)
   - [To run the app](#to-run-the-app)
 
+[![CircleCI](https://circleci.com/gh/HajimeK/pome_front.svg?style=svg)](https://circleci.com/gh/HajimeK/pome_front)
+
 ## Page Design
 
 ![Site Design](sitedesign.png)
